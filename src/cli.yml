@@ -1,0 +1,13 @@
+name: permutations
+version: "0.1.0"
+author: Andrés Felipe Poveda. <felipe07@gmail.com>
+about: Implementation of Heap's iterative algorithm to compute the permutations of a list of elements
+args:
+    - input:
+        short: i
+        long: input
+        value_name: INPUT
+        help: Single string of comma separated numbers 
+        takes_value: true
+        required: true
+        index: 1
