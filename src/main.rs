@@ -25,7 +25,7 @@ fn parse_input(reader: &Stdin) -> Vec<i64> {
 
 /// Generates all possible permutations with repetitions of a vector of numbers.
 /// The function implements the iterative version of Heap's algorithm as descrived on: 
-/// https://en.wikipedia.org/wiki/Heap%27s_algorithm
+/// <https://en.wikipedia.org/wiki/Heap%27s_algorithm>
 /// ```
 /// generate_permutations([1, 2, 3, 4], 4);
 /// ```
