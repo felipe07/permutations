@@ -1,7 +1,7 @@
 [package]
 name = "permutations"
 version = "0.1.0"
-authors = ["Andrés Poveda <andres@getpenta.com>"]
+authors = ["Andrés Felipe Poveda <felipe07@gmail.com>"]
 edition = "2018"
 description = "Rust implementation of Heap's algorithm to generate all possible permutations with repetitions of a vector of numbers"
 
