@@ -11,7 +11,7 @@ fn succeeds_if_binari_called_with_supported_input() {
 }
 
 #[test]
-fn panics_if_binari_called_with_incorrect_number_separator() {
+fn panics_if_binari_called_with_unsupported_number_separator() {
     Command::cargo_bin("permutations")
         .unwrap()
         .write_stdin("1; 2; 3")
