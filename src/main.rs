@@ -9,7 +9,8 @@ fn main() {
 }
 
 /// Converts a single string of comma separated numbers provided through 
-/// standard input into a vector of numbers
+/// standard input into a vector of numbers. If the provided string cannot
+/// be parsed the program will `panic!`.
 /// ```
 /// let reader = io::stdin();
 /// let mut elements: Vec<i64> = parse_input(&reader);
@@ -29,7 +30,7 @@ fn parse_input(reader: &Stdin) -> Vec<i64> {
 /// ```
 /// generate_permutations([1, 2, 3, 4], 4);
 /// ```
-fn generate_permutations(elements: &mut Vec<i64>, len: usize) {
+pub fn generate_permutations(elements: &mut Vec<i64>, len: usize) {
     let mut control_vec: Vec<usize> = vec![0; len]; 
     let mut i: usize = 0;
     
@@ -51,3 +52,6 @@ fn generate_permutations(elements: &mut Vec<i64>, len: usize) {
         }
     }
 }
+
+#[cfg(test)]
+mod tests;

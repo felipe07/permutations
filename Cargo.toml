@@ -3,3 +3,8 @@ name = "permutations"
 version = "0.1.0"
 authors = ["Andrés Poveda <andres@getpenta.com>"]
 edition = "2018"
+description = "Rust implementation of Heap's algorithm to generate all possible permutations with repetitions of a vector of numbers"
+
+[dependencies]
+assert_cmd = "1.0.4"
+predicates = "1.0.8"
