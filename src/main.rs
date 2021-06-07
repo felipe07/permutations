@@ -28,7 +28,9 @@ fn parse_input(reader: &Stdin) -> Vec<i64> {
 /// The function implements the iterative version of Heap's algorithm as descrived on: 
 /// <https://en.wikipedia.org/wiki/Heap%27s_algorithm>
 /// ```
-/// generate_permutations([1, 2, 3, 4], 4);
+/// let mut elements: Vec<i64> = vec![1, 2, 3, 4];
+/// let len = elements.len();
+/// generate_permutations(&mut elements, len);
 /// ```
 pub fn generate_permutations(elements: &mut Vec<i64>, len: usize) {
     let mut control_vec: Vec<usize> = vec![0; len]; 
